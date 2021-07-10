@@ -5,15 +5,12 @@ html, body{
 }
 
 .container_{
-  @media (max-width: 779px){
-    overflow-x: scroll;
-  }
   position: relative;
   display: flex;
   justify-content: center;
   width: auto;
 
-  .container-img-facture {
+  .container-img-factura {
     position: relative;
     width: 80%;
     height: 38rem;
@@ -44,7 +41,7 @@ html, body{
       width: auto;
       height: auto;
       align-self: center;
-      border: 3px solid rgb(220, 12, 100);
+      //border: 1px solid rgba(2, 2, 49, 0.55);
     }
 
     .col-1{
@@ -119,11 +116,11 @@ html, body{
 
   }
 
-  .img-facture{
+  .img-container-facture{
     position: absolute;
     display: block;
     z-index: 100;
-    width: 100%;
+    width: 80%;
     height: 100%;
   }
 }
@@ -151,13 +148,8 @@ html, body{
         animation: modalFadeIn .3s .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
         h2,p,img {
           opacity:0;
-          font-family: Arial;
           position:relative;
           animation: modalContentFadeIn .3s 0.8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-        }
-
-        img{
-          width: 100%;
         }
       }
     }
@@ -312,4 +304,3 @@ html, body{
     top:-20px;
   }
 }
-

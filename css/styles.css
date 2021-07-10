@@ -8,12 +8,7 @@ html.modal-active, body.modal-active {
   justify-content: center;
   width: auto;
 }
-@media (max-width: 779px) {
-  .container_ {
-    overflow-x: scroll;
-  }
-}
-.container_ .container-img-facture {
+.container_ .container-img-factura {
   position: relative;
   width: 80%;
   height: 38rem;
@@ -28,34 +23,33 @@ html.modal-active, body.modal-active {
   grid-template-areas: "col-1 col-1 col-2 col-2 col-3 col-3" "col-4 col-4 col-4 col-5 col-6 col-6" "col-7 col-7 col-7 col-8 col-8 col-8" "col-9 col-9 col-9 col-8 col-8 col-8" "col-9 col-9 col-9 col-8 col-8 col-8" "col-10 col-10 col-10 col-8 col-8 col-8" "col-11 col-11 col-11 col-12 col-12 col-12";
   padding: 1em 2em 0.5em 2em;
 }
-.container_ .container-img-facture .col {
+.container_ .container-img-factura .col {
   width: auto;
   height: auto;
   align-self: center;
-  border: 3px solid #dc0c64;
 }
-.container_ .container-img-facture .col-1 {
+.container_ .container-img-factura .col-1 {
   height: 50%;
   grid-column-start: col-1;
   grid-column-end: col-1;
   align-self: center;
 }
-.container_ .container-img-facture .col-2, .container_ .container-img-facture .col-3 {
+.container_ .container-img-factura .col-2, .container_ .container-img-factura .col-3 {
   opacity: 0;
 }
-.container_ .container-img-facture .col-4 {
+.container_ .container-img-factura .col-4 {
   top: -20px;
   grid-column-start: col-4;
   grid-column-end: col-4;
   align-self: center;
 }
-.container_ .container-img-facture .col-5 {
+.container_ .container-img-factura .col-5 {
   top: -20px;
   grid-column-start: col-5;
   grid-column-end: col-5;
   align-self: center;
 }
-.container_ .container-img-facture .col-6 {
+.container_ .container-img-factura .col-6 {
   top: -20px;
   grid-column-start: col-6;
   grid-column-end: col-6;
@@ -63,39 +57,39 @@ html.modal-active, body.modal-active {
   display: flex;
   justify-content: flex-end;
 }
-.container_ .container-img-facture .col-7 {
+.container_ .container-img-factura .col-7 {
   top: -40px;
   grid-area: col-7;
 }
-.container_ .container-img-facture .col-8 {
+.container_ .container-img-factura .col-8 {
   grid-area: col-8;
   align-self: stretch;
   display: flex;
   justify-content: flex-end;
 }
-.container_ .container-img-facture .col-9 {
+.container_ .container-img-factura .col-9 {
   grid-area: col-9;
   align-self: stretch;
 }
-.container_ .container-img-facture .col-10 {
+.container_ .container-img-factura .col-10 {
   grid-area: col-10;
   align-self: stretch;
 }
-.container_ .container-img-facture .col-11 {
+.container_ .container-img-factura .col-11 {
   grid-area: col-11;
   align-self: stretch;
 }
-.container_ .container-img-facture .col-12 {
+.container_ .container-img-factura .col-12 {
   grid-area: col-12;
   align-self: stretch;
   display: flex;
   justify-content: flex-end;
 }
-.container_ .img-facture {
+.container_ .img-container-facture {
   position: absolute;
   display: block;
   z-index: 100;
-  width: 100%;
+  width: 80%;
   height: 100%;
 }
 
@@ -122,12 +116,8 @@ html.modal-active, body.modal-active {
 }
 #modal-container.six .modal-background .modal h2, #modal-container.six .modal-background .modal p, #modal-container.six .modal-background .modal img {
   opacity: 0;
-  font-family: Arial;
   position: relative;
   animation: modalContentFadeIn 0.3s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-}
-#modal-container.six .modal-background .modal img {
-  width: 100%;
 }
 #modal-container.six.out {
   animation: quickScaleDown 0s 0.5s linear forwards;
