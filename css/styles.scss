@@ -5,12 +5,15 @@ html, body{
 }
 
 .container_{
+  @media (max-width: 779px){
+    overflow-x: scroll;
+  }
   position: relative;
   display: flex;
   justify-content: center;
   width: auto;
 
-  .container-img-factura {
+  .container-img-facture {
     position: relative;
     width: 80%;
     height: 38rem;
@@ -116,11 +119,11 @@ html, body{
 
   }
 
-  .img-container-facture{
+  .img-facture{
     position: absolute;
     display: block;
     z-index: 100;
-    width: 80%;
+    width: 1200px;
     height: 100%;
   }
 }

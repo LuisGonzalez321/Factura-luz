@@ -64,7 +64,7 @@ const loadData = () => {
 
         $('.modal').append(`
                             <img 
-                                class="img-facture" 
+                                class="img-element-facture" 
                                 src=${element[0].img}
                             />`)
     })
@@ -73,7 +73,7 @@ const loadData = () => {
         $(this).addClass('out');
         $('body').removeClass('modal-active');
 
-        $('.img-facture').remove()
+        $('.img-element-facture').remove()
     });
 
 };
