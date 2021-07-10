@@ -1,0 +1,257 @@
+html.modal-active, body.modal-active {
+  overflow: hidden;
+}
+
+.container_ {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+.container_ .container-img-factura {
+  position: relative;
+  width: 80%;
+  height: 38rem;
+  z-index: 200;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-areas: "col-1 col-1 col-2 col-2 col-3 col-3" "col-4 col-4 col-4 col-5 col-6 col-6" "col-7 col-7 col-7 col-8 col-8 col-8" "col-9 col-9 col-9 col-8 col-8 col-8" "col-9 col-9 col-9 col-8 col-8 col-8" "col-10 col-10 col-10 col-8 col-8 col-8" "col-11 col-11 col-11 col-12 col-12 col-12";
+  padding: 1em 2em 0.5em 2em;
+}
+.container_ .container-img-factura .col {
+  width: auto;
+  height: auto;
+  align-self: center;
+}
+.container_ .container-img-factura .col-1 {
+  height: 50%;
+  grid-column-start: col-1;
+  grid-column-end: col-1;
+  align-self: center;
+}
+.container_ .container-img-factura .col-2, .container_ .container-img-factura .col-3 {
+  opacity: 0;
+}
+.container_ .container-img-factura .col-4 {
+  top: -20px;
+  grid-column-start: col-4;
+  grid-column-end: col-4;
+  align-self: center;
+}
+.container_ .container-img-factura .col-5 {
+  top: -20px;
+  grid-column-start: col-5;
+  grid-column-end: col-5;
+  align-self: center;
+}
+.container_ .container-img-factura .col-6 {
+  top: -20px;
+  grid-column-start: col-6;
+  grid-column-end: col-6;
+  align-self: center;
+  display: flex;
+  justify-content: flex-end;
+}
+.container_ .container-img-factura .col-7 {
+  top: -40px;
+  grid-area: col-7;
+}
+.container_ .container-img-factura .col-8 {
+  grid-area: col-8;
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-end;
+}
+.container_ .container-img-factura .col-9 {
+  grid-area: col-9;
+  align-self: stretch;
+}
+.container_ .container-img-factura .col-10 {
+  grid-area: col-10;
+  align-self: stretch;
+}
+.container_ .container-img-factura .col-11 {
+  grid-area: col-11;
+  align-self: stretch;
+}
+.container_ .container-img-factura .col-12 {
+  grid-area: col-12;
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-end;
+}
+.container_ .img-container-facture {
+  position: absolute;
+  display: block;
+  z-index: 100;
+  width: 80%;
+  height: 100%;
+}
+
+#modal-container {
+  position: fixed;
+  display: table;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  z-index: 999;
+}
+#modal-container.six {
+  transform: scale(1);
+}
+#modal-container.six .modal-background {
+  background: rgba(0, 0, 0, 0);
+  animation: fadeIn 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.six .modal-background .modal {
+  background-color: transparent;
+  animation: modalFadeIn 0.3s 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.six .modal-background .modal h2, #modal-container.six .modal-background .modal p, #modal-container.six .modal-background .modal img {
+  opacity: 0;
+  position: relative;
+  animation: modalContentFadeIn 0.3s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.six.out {
+  animation: quickScaleDown 0s 0.5s linear forwards;
+}
+#modal-container.six.out .modal-background {
+  animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.six.out .modal-background .modal {
+  animation: modalFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.six.out .modal-background .modal h2, #modal-container.six.out .modal-background .modal p {
+  animation: modalContentFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.six.out .modal-background .modal .modal-svg rect {
+  animation: sketchOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container .modal-background {
+  display: table-cell;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  vertical-align: middle;
+}
+#modal-container .modal-background .modal {
+  background: white;
+  padding: 50px;
+  display: inline-block;
+  border-radius: 3px;
+  font-weight: 300;
+  position: relative;
+}
+#modal-container .modal-background .modal h2 {
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+#modal-container .modal-background .modal p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.button {
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: rgba(16, 131, 226, 0.6);
+  border: 1px solid rgba(121, 192, 245, 0.6);
+  color: white;
+}
+.button:hover {
+  color: white;
+  background: #009bd5;
+}
+
+@keyframes fadeIn {
+  0% {
+    background: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0);
+  }
+}
+@keyframes quickScaleDown {
+  0% {
+    transform: scale(1);
+  }
+  99.9% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes sketchIn {
+  0% {
+    stroke-dashoffset: 778;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes sketchOut {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 778;
+  }
+}
+@keyframes modalFadeIn {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: white;
+  }
+}
+@keyframes modalFadeOut {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+@keyframes modalContentFadeIn {
+  0% {
+    opacity: 0;
+    top: -20px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes modalContentFadeOut {
+  0% {
+    opacity: 1;
+    top: 0px;
+  }
+  100% {
+    opacity: 0;
+    top: -20px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
