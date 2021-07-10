@@ -41,7 +41,7 @@ html, body{
       width: auto;
       height: auto;
       align-self: center;
-      //border: 1px solid rgba(2, 2, 49, 0.55);
+      border: 3px solid rgb(220, 12, 100);
     }
 
     .col-1{
@@ -148,8 +148,13 @@ html, body{
         animation: modalFadeIn .3s .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
         h2,p,img {
           opacity:0;
+          font-family: Arial;
           position:relative;
           animation: modalContentFadeIn .3s 0.8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        }
+
+        img{
+          width: 100%;
         }
       }
     }
