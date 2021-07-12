@@ -61,9 +61,7 @@ const loadData = () => {
         var element = dataListText.filter(item=>(item.id === buttonId)? item.info.toString():null);
         $('.text-facture').text(element[0].info);
 
-        $('.modal').append(`<img 
-                                class="img-element-facture" 
-                                src=${element[0].img}/>`)
+        $('.modal').append(`<img class="img-element-facture" src=${element[0].img}/>`);
     })
 
     $('#modal-container').click(function(){
