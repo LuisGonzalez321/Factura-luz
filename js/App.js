@@ -2,7 +2,7 @@ const dataListText = [
     {
       id: "six six-1",
       info: "1) Empresa a la que pertenece",
-      img: './img/factura-1.png'
+      img: '../img/factura-1.png'
     },
     {
       id: "six six-2",
