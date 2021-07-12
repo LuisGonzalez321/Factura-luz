@@ -4,6 +4,10 @@ html, body{
   &.modal-active {
     overflow: hidden;
   }
+
+  @media (max-width: 768px) {
+    overflow-x: scroll;
+  }
 }
 
 .container_{
@@ -22,7 +26,6 @@ html, body{
   //background: crimson;
 
   .container-img-factura {
-
     margin-left: 20px;
     margin-right: 20px;
     position: relative;
@@ -170,6 +173,7 @@ html, body{
         background-color:transparent;
         animation: modalFadeIn .3s .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
         h2,p,img {
+
           opacity:0;
           position:relative;
           animation: modalContentFadeIn .3s 0.8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;

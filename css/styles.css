@@ -1,6 +1,11 @@
 html.modal-active, body.modal-active {
   overflow: hidden;
 }
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: scroll;
+  }
+}
 
 .container_ {
   position: relative;
