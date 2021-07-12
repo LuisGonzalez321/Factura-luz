@@ -196,6 +196,10 @@ html.modal-active, body.modal-active {
   font-size: 18px;
   line-height: 22px;
 }
+#modal-container .modal-background .modal img {
+  max-width: 280px;
+  height: auto;
+}
 
 .button {
   text-align: center;
@@ -306,6 +310,7 @@ html.modal-active, body.modal-active {
 ::-webkit-scrollbar {
   width: 5px;
   height: 10px;
+  background: #d7dede;
 }
 
 ::-webkit-scrollbar-thumb {

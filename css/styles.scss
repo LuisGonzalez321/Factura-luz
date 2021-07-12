@@ -230,6 +230,10 @@ html, body{
         font-size:18px;
         line-height:22px;
       }
+      img{
+        max-width: 280px;
+        height: auto;
+      }
     }
   }
 }
@@ -357,6 +361,7 @@ html, body{
 ::-webkit-scrollbar {
   width: 5px;
   height: 10px;
+  background: #d7dede;
 }
 
 ::-webkit-scrollbar-thumb {
