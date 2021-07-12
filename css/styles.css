@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "lato-regular";
+  src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
+}
 html.modal-active, body.modal-active {
   overflow: hidden;
 }
@@ -146,6 +150,9 @@ html.modal-active, body.modal-active {
   opacity: 0;
   position: relative;
   animation: modalContentFadeIn 0.3s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.six .modal-background .modal h2, #modal-container.six .modal-background .modal p {
+  font-family: "lato-regular";
 }
 #modal-container.six.out {
   animation: quickScaleDown 0s 0.5s linear forwards;

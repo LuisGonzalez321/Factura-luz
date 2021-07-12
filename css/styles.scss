@@ -1,5 +1,13 @@
 $size-column: 150px;
 
+
+@font-face {
+  font-family: "lato-regular";
+  src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
+}
+
+$lato-regular: "lato-regular";
+
 html, body{
   &.modal-active {
     overflow: hidden;
@@ -175,6 +183,9 @@ html, body{
           opacity:0;
           position:relative;
           animation: modalContentFadeIn .3s 0.8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        }
+        h2, p{
+          font-family: $lato-regular;
         }
       }
     }
