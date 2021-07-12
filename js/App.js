@@ -74,4 +74,11 @@ const loadData = () => {
 
         $('.img-element-facture').remove()
     });
+
+    $('.btn-close').click(()=>{
+        $(this).addClass('out');
+        $('body').removeClass('modal-active');
+
+        $('.img-element-facture').remove()
+    })
 };

@@ -14,7 +14,6 @@ html.modal-active, body.modal-active {
   width: 940px;
   margin: auto;
   height: 600px;
-  border: 1px solid darkblue;
 }
 @media (max-width: 768px) {
   .container_ {
@@ -143,7 +142,7 @@ html.modal-active, body.modal-active {
   background-color: transparent;
   animation: modalFadeIn 0.3s 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
-#modal-container.six .modal-background .modal h2, #modal-container.six .modal-background .modal p, #modal-container.six .modal-background .modal img {
+#modal-container.six .modal-background .modal h2, #modal-container.six .modal-background .modal p, #modal-container.six .modal-background .modal img, #modal-container.six .modal-background .modal a, #modal-container.six .modal-background .modal i {
   opacity: 0;
   position: relative;
   animation: modalContentFadeIn 0.3s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
@@ -157,11 +156,8 @@ html.modal-active, body.modal-active {
 #modal-container.six.out .modal-background .modal {
   animation: modalFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
-#modal-container.six.out .modal-background .modal h2, #modal-container.six.out .modal-background .modal p {
+#modal-container.six.out .modal-background .modal h2, #modal-container.six.out .modal-background .modal p, #modal-container.six.out .modal-background .modal img, #modal-container.six.out .modal-background .modal a {
   animation: modalContentFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-}
-#modal-container.six.out .modal-background .modal .modal-svg rect {
-  animation: sketchOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container .modal-background {
   display: table-cell;
@@ -171,7 +167,7 @@ html.modal-active, body.modal-active {
 }
 #modal-container .modal-background .modal {
   background: white;
-  padding: 50px;
+  padding: 20px;
   display: inline-block;
   border-radius: 3px;
   font-weight: 300;
@@ -201,6 +197,17 @@ html.modal-active, body.modal-active {
 .button:hover {
   color: white;
   background: #009bd5;
+}
+
+.btn-close {
+  display: flex;
+  text-decoration: none;
+  justify-content: flex-end;
+}
+.btn-close i {
+  display: block;
+  justify-self: flex-end;
+  color: #009bd5;
 }
 
 @keyframes fadeIn {
