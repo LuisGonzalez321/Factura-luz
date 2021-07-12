@@ -1,4 +1,3 @@
-
 const dataListText = [
     {
       id: "six six-1",
@@ -75,5 +74,4 @@ const loadData = () => {
 
         $('.img-element-facture').remove()
     });
-
 };
