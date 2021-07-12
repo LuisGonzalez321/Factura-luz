@@ -6,7 +6,7 @@ html.modal-active, body.modal-active {
   position: relative;
   display: flex;
   justify-content: center;
-  width: 1100px;
+  width: 940px;
   margin: auto;
   height: 600px;
   border: 1px solid darkblue;
@@ -21,7 +21,7 @@ html.modal-active, body.modal-active {
   margin-left: 20px;
   margin-right: 20px;
   position: relative;
-  width: 990px;
+  width: 900px;
   height: auto;
   z-index: 200;
   display: grid;
@@ -33,7 +33,7 @@ html.modal-active, body.modal-active {
 }
 @media (min-width: 990px) {
   .container_ .container-img-factura {
-    padding: 1em 2em 0.5em 2em;
+    padding: 1em 1em 0.5em 1em;
   }
 }
 .container_ .container-img-factura .col {
@@ -111,10 +111,10 @@ html.modal-active, body.modal-active {
   z-index: 100;
   top: 30px;
   display: block;
-  width: 870px;
+  width: 860px;
   height: auto;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 #modal-container {
