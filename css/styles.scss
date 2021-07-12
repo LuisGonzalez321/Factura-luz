@@ -98,9 +98,12 @@ html, body{
       grid-column-start: col-6;
       grid-column-end: col-6;
       align-self: center;
-
       display: flex;
       justify-content: flex-end;
+      .button{
+        position: relative;
+        right: 15px;
+      }
     }
 
     .col-7{

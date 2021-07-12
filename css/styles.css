@@ -80,6 +80,10 @@ html.modal-active, body.modal-active {
   display: flex;
   justify-content: flex-end;
 }
+.container_ .container-img-factura .col-6 .button {
+  position: relative;
+  right: 15px;
+}
 .container_ .container-img-factura .col-7 {
   width: 450px;
   top: -40px;
