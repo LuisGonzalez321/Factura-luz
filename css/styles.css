@@ -6,12 +6,30 @@ html.modal-active, body.modal-active {
   position: relative;
   display: flex;
   justify-content: center;
-  width: auto;
+  width: 100%;
+  height: 600px;
+  border: 1px solid darkblue;
+  margin: auto;
+}
+@media (min-width: 769px) {
+  .container_ {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .container_ {
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: scroll;
+  }
 }
 .container_ .container-img-factura {
   position: relative;
-  width: 80%;
-  height: 38rem;
+  width: 990px;
+  height: auto;
   z-index: 200;
   background-size: contain;
   background-repeat: no-repeat;
@@ -27,6 +45,7 @@ html.modal-active, body.modal-active {
   width: auto;
   height: auto;
   align-self: center;
+  border: 4px solid rgba(167, 25, 82, 0.55);
 }
 .container_ .container-img-factura .col-1 {
   height: 50%;
@@ -87,10 +106,11 @@ html.modal-active, body.modal-active {
 }
 .container_ .img-container-facture {
   position: absolute;
-  display: block;
   z-index: 100;
-  width: 80%;
-  height: 100%;
+  top: 30px;
+  display: block;
+  width: 870px;
+  height: auto;
 }
 
 #modal-container {
