@@ -61,7 +61,8 @@ html, body{
     .col{
       //background: chartreuse;
       align-self: center;
-      //border: 4px solid rgba(175, 175, 175, 0.55);
+      position: relative;
+      //border: 3px solid rgba(175, 175, 175, 0.55);
     }
 
     .col-1{
@@ -108,7 +109,7 @@ html, body{
 
     .col-7{
       width: $size-column * 3;
-      top: -40px;
+      top: -50px;
       grid-area: col-7;
     }
 
@@ -122,6 +123,7 @@ html, body{
     }
 
     .col-9{
+      top: -80px;
       width: $size-column * 3;
       grid-area: col-9;
       align-self: stretch;
@@ -131,6 +133,7 @@ html, body{
       width: $size-column * 3;
       grid-area: col-10;
       align-self: stretch;
+      top: -100px;
     }
 
     .col-11{
@@ -347,4 +350,21 @@ html, body{
     opacity:0;
     top:-20px;
   }
+}
+
+//-----------------------------------------------//
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background:#009bd5;
+  border-radius: 6px;
+  transition: all 0.3s ease-in;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cbc4bb;
 }

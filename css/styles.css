@@ -46,6 +46,7 @@ html.modal-active, body.modal-active {
 }
 .container_ .container-img-factura .col {
   align-self: center;
+  position: relative;
 }
 .container_ .container-img-factura .col-1 {
   width: 300px;
@@ -86,7 +87,7 @@ html.modal-active, body.modal-active {
 }
 .container_ .container-img-factura .col-7 {
   width: 450px;
-  top: -40px;
+  top: -50px;
   grid-area: col-7;
 }
 .container_ .container-img-factura .col-8 {
@@ -97,6 +98,7 @@ html.modal-active, body.modal-active {
   justify-content: flex-end;
 }
 .container_ .container-img-factura .col-9 {
+  top: -80px;
   width: 450px;
   grid-area: col-9;
   align-self: stretch;
@@ -105,6 +107,7 @@ html.modal-active, body.modal-active {
   width: 450px;
   grid-area: col-10;
   align-self: stretch;
+  top: -100px;
 }
 .container_ .container-img-factura .col-11 {
   width: 450px;
@@ -299,6 +302,20 @@ html.modal-active, body.modal-active {
     opacity: 0;
     top: -20px;
   }
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #009bd5;
+  border-radius: 6px;
+  transition: all 0.3s ease-in;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cbc4bb;
 }
 
 /*# sourceMappingURL=styles.css.map */
