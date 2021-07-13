@@ -3,7 +3,7 @@ const dataListText = [
       id: "six six-1",
       info: "1) Empresa a la que pertenece",
       //blob/master/img/factura-10.jpg
-      img: './blob/master/img/factura-10.jpg'
+      img: './img/factura-1.png'
     },
     {
       id: "six six-2",
@@ -62,7 +62,11 @@ const loadData = () => {
         var element = dataListText.filter(item=>(item.id === buttonId)? item.info.toString():null);
         $('.text-facture').text(element[0].info);
 
-        $('.modal').append(`<img class="img-element-facture" src=${element[0].img}/>`);
+        $('.modal').append(`
+                            <img 
+                                class="img-facture" 
+                                src=${element[0].img}
+                            />`)
     })
 
     $('#modal-container').click(function(){
