@@ -69,7 +69,7 @@ const loadData = () => {
                                 alt="elemento de la factura"
                             />`);
         let count = 0;
-        $('.img-facture').dblclick(()=>{
+        $('.img-facture').click(()=>{
            if(count === 0){
                count = 1;
                $('.img-facture').addClass('zoom');
@@ -77,9 +77,7 @@ const loadData = () => {
                $('.img-facture').removeClass('zoom');
                count = 0;
            }
-        })
-
-
+        });
     })
 
     $('.btn-close').click(()=>{

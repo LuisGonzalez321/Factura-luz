@@ -202,6 +202,7 @@ html.modal-active, body.modal-active {
 #modal-container .modal-background .modal img {
   max-width: 280px;
   height: auto;
+  cursor: pointer;
 }
 
 .button {
@@ -344,6 +345,11 @@ html.modal-active, body.modal-active {
   /* Opera */
   -ms-transform: scaleX(1.6) scaleY(1.6);
   /* IE9 */
+}
+@media (max-width: 768px) {
+  .zoom {
+    transform: scaleX(1.3) scaleY(1.3);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

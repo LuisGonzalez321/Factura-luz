@@ -236,6 +236,7 @@ html, body{
       img{
         max-width: 280px;
         height: auto;
+        cursor: pointer;
       }
     }
   }
@@ -388,4 +389,8 @@ html, body{
   -webkit-transform : scaleX(1.6) scaleY(1.6); /* Chrome - Safari */
   -o-transform : scaleX(1.6) scaleY(1.6);/* Opera */
   -ms-transform : scaleX(1.6) scaleY(1.6);/* IE9 */
+  @media (max-width: 768px) {
+    transform:  scaleX(1.3) scaleY(1.3);
+
+  }
 }
