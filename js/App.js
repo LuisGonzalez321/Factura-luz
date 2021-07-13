@@ -66,18 +66,28 @@ const loadData = () => {
                             <img 
                                 class="img-facture" 
                                 src=${element[0].img} 
-                            />`)
-    })
+                                alt="elemento de la factura"
+                            />`);
+        let count = 0;
+        $('.img-facture').dblclick(()=>{
+           if(count === 0){
+               count = 1;
+               $('.img-facture').addClass('zoom');
+           }else if(count === 1){
+               $('.img-facture').removeClass('zoom');
+               count = 0;
+           }
+        })
 
-    $('#modal-container').click(function(){
-        $(this).addClass('out');
-        $('body').removeClass('modal-active');
-        $('.img-facture').remove()
-    });
+
+    })
 
     $('.btn-close').click(()=>{
-        $(this).addClass('out');
+        $('#modal-container').addClass('out');
         $('body').removeClass('modal-active');
-        $('.img-facture').remove()
-    })
+        $('.img-facture').remove();
+    });
+
 };
+
+

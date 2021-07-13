@@ -158,6 +158,9 @@ html.modal-active, body.modal-active {
   position: relative;
   animation: modalContentFadeIn 0.3s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
+#modal-container.six .modal-background .modal img {
+  transition: 1.5s ease;
+}
 #modal-container.six .modal-background .modal h2, #modal-container.six .modal-background .modal p {
   font-family: "lato-regular";
 }
@@ -322,6 +325,25 @@ html.modal-active, body.modal-active {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #cbc4bb;
+}
+
+.zoom {
+  transition: 1.1s ease;
+  -moz-transition: 1.1s ease;
+  /* Firefox */
+  -webkit-transition: 1.1s ease;
+  /* Chrome - Safari */
+  -o-transition: 1.1s ease;
+  /* Opera */
+  transform: scaleX(1.6);
+  -moz-transform: scaleX(1.6) scaleY(1.6);
+  /* Firefox */
+  -webkit-transform: scaleX(1.6) scaleY(1.6);
+  /* Chrome - Safari */
+  -o-transform: scaleX(1.6) scaleY(1.6);
+  /* Opera */
+  -ms-transform: scaleX(1.6) scaleY(1.6);
+  /* IE9 */
 }
 
 /*# sourceMappingURL=styles.css.map */

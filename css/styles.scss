@@ -190,6 +190,9 @@ html, body{
           position:relative;
           animation: modalContentFadeIn .3s 0.8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
         }
+        img{
+          transition: 1.5s ease;
+        }
         h2, p{
           font-family: $lato-regular;
         }
@@ -373,4 +376,16 @@ html, body{
 
 ::-webkit-scrollbar-thumb:hover {
   background: #cbc4bb;
+}
+//-------------------------------------------//
+.zoom{
+  transition: 1.1s ease;
+  -moz-transition: 1.1s ease; /* Firefox */
+  -webkit-transition: 1.1s ease; /* Chrome - Safari */
+  -o-transition: 1.1s ease; /* Opera */
+  transform:  scaleX(1.6) ;
+  -moz-transform : scaleX(1.6) scaleY(1.6); /* Firefox */
+  -webkit-transform : scaleX(1.6) scaleY(1.6); /* Chrome - Safari */
+  -o-transform : scaleX(1.6) scaleY(1.6);/* Opera */
+  -ms-transform : scaleX(1.6) scaleY(1.6);/* IE9 */
 }
