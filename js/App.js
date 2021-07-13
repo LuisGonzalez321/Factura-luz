@@ -65,7 +65,7 @@ const loadData = () => {
         $('.modal').append(`
                             <img 
                                 class="img-facture" 
-                                src=${element[0].img}
+                                src=${element[0].img} 
                             />`)
     })
 
