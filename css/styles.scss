@@ -1,6 +1,5 @@
 $size-column: 150px;
 
-
 @font-face {
   font-family: "lato-regular";
   src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
@@ -366,6 +365,7 @@ html, body{
   width: 5px;
   height: 10px;
   background: #d7dede;
+
 }
 
 ::-webkit-scrollbar-thumb {
@@ -393,4 +393,33 @@ html, body{
     transform:  scaleX(1.1) scaleY(1.1);
 
   }
+}
+
+.scroll-buttons{
+  display: none;
+  @media (max-width: 768px){
+    display: block;
+    height: 30px;
+    width: 100%;
+    overflow: hidden;
+    span{
+      font-size: 2.3em;
+      position: relative;
+      animation:moveScrollIcon 1.1s linear infinite alternate;
+      transition: all 1s ease-in;
+      i {
+        padding-left: 20px;
+        color: #009bd5;
+      }
+    }
+  }
+}
+
+@keyframes moveScrollIcon {
+ 0%{
+   left: 0;
+ }
+ 100%{
+  left: 100px;
+ }
 }

@@ -352,4 +352,35 @@ html.modal-active, body.modal-active {
   }
 }
 
+.scroll-buttons {
+  display: none;
+}
+@media (max-width: 768px) {
+  .scroll-buttons {
+    display: block;
+    height: 30px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .scroll-buttons span {
+    font-size: 2.3em;
+    position: relative;
+    animation: moveScrollIcon 1.1s linear infinite alternate;
+    transition: all 1s ease-in;
+  }
+  .scroll-buttons span i {
+    padding-left: 20px;
+    color: #009bd5;
+  }
+}
+
+@keyframes moveScrollIcon {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
